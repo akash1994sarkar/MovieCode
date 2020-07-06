@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<resource-ref>
+<description>
+Example Database</description>
+<res-ref-name>jdbc/myapp</res-ref-name>
+<res-type>javax.sql.DataSource</res-type>
+<res-auth>Container</res-auth>
+<res-sharing-scope>Shareable</res-sharing-scope>
+</resource-ref>
+
+
+    <Resource name="jdbc/myapp" auth="Container" type="javax.sql.DataSource"
+              maxActive="15" maxIdle="3" username="Prem" password="Prem" 
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/prem"/>              
+</Context>
